@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.1927
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "creatMovie", "creatMovie\creatMovie.csproj", "{3F38F7A8-CB15-4199-94CA-E616D14EFBC8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "profiles", "creatMovie\profiles.csproj", "{3F38F7A8-CB15-4199-94CA-E616D14EFBC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
