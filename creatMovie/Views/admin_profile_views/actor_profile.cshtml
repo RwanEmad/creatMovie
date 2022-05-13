@@ -1,0 +1,109 @@
+﻿
+@{
+    ViewBag.Title = "actor_profile";
+}
+@Styles.Render("~/Content/Actor_Director_profile.css")
+
+
+<div class="container">
+
+    <div class="col-md-10">
+
+        <div class="profile">
+            <!--ده اللي جواه كل الصوره والا bio -->
+
+            <div class="profile_image">
+                <!-- ده اللي جواه الصوره بتاعة البروفايل-->
+                <img class="profile_img" src="../../images/user.png" alt="...">
+            </div>
+
+            <div class="col-md-9">
+
+                <div class="paragraph">
+                    <div class="profile_name">
+                        <h2>Profile Name</h2>
+                    </div>
+
+                    <p>
+                        A biography is a detailed third person account of another person's life story.
+                        It contains basic information about the subject's life—like their place of birth,
+                        education, and interests.
+                    </p>
+
+                    <button class="edit_photo"> Edit Photo </button>
+                </div>
+
+                <button class="edit_profile"> Edit Profile </button>
+
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="movies">
+        <div class="header">
+            <h2>Movies</h2>
+        </div>
+
+        <div class="slider">
+
+            <div id="card_slider">
+                <div id="card_track">
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>     
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                    <a href="  ">
+                        <div class="subject_card">
+                            @Html.Partial("movieCard")
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+

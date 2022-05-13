@@ -1,0 +1,52 @@
+﻿<!---------------------favourite card---------------------------------------------------------->
+@Styles.Render("~/Content/favoritCard.css")
+
+<div class="row favorite-card">
+    <div class="col-sm-12">
+        <h1 class="h1"> Movies </h1>
+        <div class="thumbnail">
+            <div class="favorite">
+                <img src="../../images/stave jops.png" alt="Movie Image">
+                <svg xmlns="http://www.w3.org/2000/svg" id="add-fav" width="16" height="16" fill="currentColor"
+                     class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z" />
+                </svg>
+            </div>
+        </div>
+
+        <!--------------------------favourit drop down list--------------------->
+        <div class="dropdown">
+            <button class="btn btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+                Select Movie
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-chevron-down" viewBox="0 -2 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1
+        0-.708z" />
+                </svg>
+            </button>
+            <ul id="fav-movies" class="dropdown-menu dropdown-menu-dark">
+                <li class="li">Movie_1</li>
+                <li class="li">Movie_2</li>
+                <li class="li">Movie_3</li>
+                <li class="li">Movie_4</li>
+                <li class="li">Movie_5</li>
+                <li class="li">Movie_6</li>
+                <li class="li">Movie_7</li>
+                <li class="li">Movie_8</li>
+                <li class="li">Movie_9</li>
+                <li class="li">Movie_10</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+@*
+    Heart Icon
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0
+    16 16">
+    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+    </svg>
+*@

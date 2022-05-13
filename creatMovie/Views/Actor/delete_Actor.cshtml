@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "delete_Actor";
+}
+@Styles.Render("~/Content/Actor_Director.css")
+@Scripts.Render("~/Content/Actor_Director.js")
+
+<div class="container">
+    <div class="header">
+        <h2>Delete Actor</h2>
+    </div>
+    <div class="form">
+        <form action="/action_page.php">
+            <div class="input_fields">
+                <div class="name">
+                    <label class="label" for="name" name="name">First Name </label>
+                    <br />
+                    <div id="name" class="name">
+                        <input type="text" id="fname" name="fname">
+                    </div>
+                </div>
+                <div class="name">
+                    <label class="label" for="name" name="name">First Name </label>
+                    <br />
+                    <div id="name" class="name">
+                        <input type="text" id="lname" name="lname">
+                    </div>
+                </div>
+                <div class="age_field">
+                    <label class="label" for="age" name="age"> Age </label>
+                    <br />
+                    <div id="age" class="age">
+                        <input type="text" id="age" name="age">
+                    </div>
+                </div>
+                <br />
+
+                <label class="label" for="biography" name="biography"> Biography </label>
+                <br />
+                <div class="biography">
+                    <input type="text" id="biography" name="biography">
+                </div>
+                <br />
+
+                <label class="label" for="movie_name" name="movie_name"> Movie Name </label>
+                <br />
+                <div id="movie" class="movie">
+                    <input type="text" id="movie_name" name="movie_name">
+                </div>
+                <button type="button" class="add_movie" onclick="add_movie()">+</button>
+            </div>
+
+
+            <div class="add-photo">
+                <div class="photo">
+
+                    <img class="profile_img" src="../../images/user.png" alt="...">
+                    <button class="edit_photo"> Edit Photo </button>
+                </div>
+            </div>
+
+            <button type="submit" class="save">Save</button>
+
+        </form>
+    </div>
+
+</div>

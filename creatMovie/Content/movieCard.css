@@ -1,0 +1,106 @@
+﻿* {
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+/*body {
+    background-color: #080808;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+*/
+/*----card container-----*/
+.movie-card {
+    width: 350px;
+    height: 520px;
+    margin: 5%;
+    display: inline-block;
+}
+
+    .movie-card > .col-sm-12 {
+        height: 100%;
+    }
+
+    /*------card-------*/
+    .movie-card > div > .thumbnail {
+        width: 100%;
+        height: 100%;
+        border: solid 1px #D69A30;
+        background-color: #1E1E1E;
+        border-radius: 20px;
+        padding: 25px;
+    }
+
+        /*----card image contaner-----------*/
+        .movie-card > div > .thumbnail > .movie {
+            margin: auto;
+            position: relative;
+            width: 97%;
+            height: 60%;
+            border-radius: 20px;
+        }
+
+            /*----card image----------*/
+            .movie-card > div > .thumbnail > .movie img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+            }
+
+            /*----add-fav icon------*/
+            .movie-card > div > .thumbnail > .movie > .bi {
+                position: absolute;
+                bottom: 0%;
+                /* margin-left: -15%;*/
+                margin-left: 90%;
+                margin-bottom: -8%;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                color: #D69A30;
+                background-color: #1E1E1E;
+                cursor: pointer;
+            }
+
+        /*----movie name----------*/
+        .movie-card > div > .thumbnail > .movie-name {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 5% 0%;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /*----go to trailer button------*/
+        .movie-card > div > .thumbnail > .trailer {
+            width: 100%;
+            height: 55px;
+            padding: 1% 10%;
+            background: #D69A30;
+            border-radius: 10px;
+            font-size: 30px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+            .movie-card > div > .thumbnail > .trailer > .bi {
+                width: 30px;
+                height: 30px;
+                float: right;
+                margin: 3% 0%;
+            }
+
+/*----Rating------*/
+#rating {
+    width: 100%;
+    padding: 3%;
+    margin: 5% 0;
+    text-align: center;
+}
+
+    #rating > .bi {
+        color: #D69A30;
+        width: 30px;
+        height: 30px;
+        margin: 0 3%;
+    }
