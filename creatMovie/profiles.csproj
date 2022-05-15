@@ -143,16 +143,31 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\ActorController.cs" />
     <Compile Include="Controllers\admin_profile_viewsController.cs" />
+    <Compile Include="Controllers\DefaultController.cs" />
     <Compile Include="Controllers\directorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\imdb_homeController.cs" />
     <Compile Include="Controllers\movieController.cs" />
+    <Compile Include="Controllers\MoviesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Cast.cs">
+    <Compile Include="Models\Actor.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Comment.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Director.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Favorite_Actor.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Favorite_Director.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Favorite_Movie.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\like.cs">
@@ -173,10 +188,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Movie_images.cs">
+    <Compile Include="Models\Movy.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Movy.cs">
+    <Compile Include="Models\Staff.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\User.cs">
@@ -185,6 +200,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\IMDb.sql" />
     <Content Include="Content\profile_card.css" />
     <Content Include="Content\adminprofile.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -203,13 +219,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\like %281%29.png" />
     <Content Include="images\moon knight.png" />
+    <Content Include="images\Screenshot 2022-04-16 134215.png" />
     <Content Include="images\stave jops.png" />
+    <Content Include="images\Terminator Genisys.png" />
     <Content Include="images\user.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -265,9 +284,16 @@
     <Content Include="Views\Shared\adminprofile.cshtml" />
     <Content Include="Views\Shared\profile_card.cshtml" />
     <Content Include="Views\movie\edit_movie.cshtml" />
+    <Content Include="Views\Default\Index1.cshtml" />
+    <Content Include="Views\Shared\movie_home.cshtml" />
+    <Content Include="Views\Movies\Create.cshtml" />
+    <Content Include="Views\Movies\Delete.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
+    <Content Include="Views\Movies\Edit.cshtml" />
+    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\imdb_home\imdb_home.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Views\admin_views\" />
   </ItemGroup>
   <ItemGroup>

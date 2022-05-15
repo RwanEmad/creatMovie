@@ -12,11 +12,13 @@ namespace creatMovie.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Movie_images
+    public partial class Favorite_Movie
     {
+        public int id { get; set; }
+        public int user_id { get; set; }
         public int movie_id { get; set; }
-        public string image { get; set; }
     
         public virtual Movy Movy { get; set; }
+        public virtual User User { get; set; }
     }
 }

@@ -13,10 +13,10 @@ namespace creatMovie.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class IMDbEntities : DbContext
+    public partial class IMDbEntities2 : DbContext
     {
-        public IMDbEntities()
-            : base("name=IMDbEntities")
+        public IMDbEntities2()
+            : base("name=IMDbEntities2")
         {
         }
     
@@ -25,11 +25,15 @@ namespace creatMovie.Models
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<Cast> Casts { get; set; }
-        public virtual DbSet<Movy> Movies { get; set; }
-        public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Actor> Actors { get; set; }
         public virtual DbSet<Comment> Comments { get; set; }
+        public virtual DbSet<Director> Directors { get; set; }
+        public virtual DbSet<Favorite_Actor> Favorite_Actor { get; set; }
+        public virtual DbSet<Favorite_Director> Favorite_Director { get; set; }
+        public virtual DbSet<Favorite_Movie> Favorite_Movie { get; set; }
         public virtual DbSet<like> likes { get; set; }
-        public virtual DbSet<Movie_images> Movie_images { get; set; }
+        public virtual DbSet<Movy> Movies { get; set; }
+        public virtual DbSet<Staff> Staffs { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

@@ -12,33 +12,23 @@ namespace creatMovie.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Movy
+    public partial class Actor
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Movy()
+        public Actor()
         {
-            this.Comments = new HashSet<Comment>();
-            this.Favorite_Movie = new HashSet<Favorite_Movie>();
-            this.likes1 = new HashSet<like>();
+            this.Favorite_Actor = new HashSet<Favorite_Actor>();
             this.Staffs = new HashSet<Staff>();
         }
     
         public int id { get; set; }
         public string name { get; set; }
-        public string description { get; set; }
-        public Nullable<int> likes { get; set; }
-        public Nullable<int> dislikes { get; set; }
-        public Nullable<int> rate { get; set; }
+        public Nullable<int> age { get; set; }
         public string image { get; set; }
-        public int dir_id { get; set; }
+        public string bio { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Comment> Comments { get; set; }
-        public virtual Director Director { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Favorite_Movie> Favorite_Movie { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<like> likes1 { get; set; }
+        public virtual ICollection<Favorite_Actor> Favorite_Actor { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Staff> Staffs { get; set; }
     }

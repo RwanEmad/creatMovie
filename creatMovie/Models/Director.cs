@@ -12,12 +12,12 @@ namespace creatMovie.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Cast
+    public partial class Director
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Cast()
+        public Director()
         {
-            this.Users = new HashSet<User>();
+            this.Favorite_Director = new HashSet<Favorite_Director>();
             this.Movies = new HashSet<Movy>();
         }
     
@@ -25,11 +25,10 @@ namespace creatMovie.Models
         public string name { get; set; }
         public Nullable<int> age { get; set; }
         public string image { get; set; }
-        public string role { get; set; }
         public string bio { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<User> Users { get; set; }
+        public virtual ICollection<Favorite_Director> Favorite_Director { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Movy> Movies { get; set; }
     }

@@ -12,14 +12,13 @@ namespace creatMovie.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class like
+    public partial class Favorite_Director
     {
         public int id { get; set; }
         public int user_id { get; set; }
-        public int movie_id { get; set; }
-        public Nullable<bool> like1 { get; set; }
+        public int Director_id { get; set; }
     
-        public virtual Movy Movy { get; set; }
+        public virtual Director Director { get; set; }
         public virtual User User { get; set; }
     }
 }

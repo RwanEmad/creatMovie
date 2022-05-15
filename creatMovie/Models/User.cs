@@ -18,9 +18,10 @@ namespace creatMovie.Models
         public User()
         {
             this.Comments = new HashSet<Comment>();
+            this.Favorite_Actor = new HashSet<Favorite_Actor>();
+            this.Favorite_Director = new HashSet<Favorite_Director>();
+            this.Favorite_Movie = new HashSet<Favorite_Movie>();
             this.likes = new HashSet<like>();
-            this.Casts = new HashSet<Cast>();
-            this.Movies = new HashSet<Movy>();
         }
     
         public int id { get; set; }
@@ -32,10 +33,12 @@ namespace creatMovie.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comments { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Favorite_Actor> Favorite_Actor { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Favorite_Director> Favorite_Director { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Favorite_Movie> Favorite_Movie { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<like> likes { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Cast> Casts { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Movy> Movies { get; set; }
     }
 }

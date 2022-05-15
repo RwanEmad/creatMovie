@@ -4,21 +4,30 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="d177e4e60f194fd3b2084374154fd2e9" Name="Diagram1">
-        <EntityTypeShape EntityType="IMDbModel.Cast" Width="1.5" PointX="0.75" PointY="4.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="IMDbModel.Movy" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="IMDbModel.User" Width="1.5" PointX="5.25" PointY="1.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="IMDbModel.Comment" Width="1.5" PointX="7.5" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="IMDbModel.like" Width="1.5" PointX="7.5" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="IMDbModel.Movie_images" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+      <Diagram DiagramId="eacf3ccd0ae84dd19044e75246c5ff57" Name="Diagram1">
+        <EntityTypeShape EntityType="IMDbModel.Actor" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.Comment" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.Director" Width="1.5" PointX="1.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.Favorite_Actor" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.Favorite_Director" Width="1.5" PointX="3" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.Favorite_Movie" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.like" Width="1.5" PointX="6" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.Movy" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.Staff" Width="1.5" PointX="6" PointY="3.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="IMDbModel.User" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <AssociationConnector Association="IMDbModel.FK_fav_actor_actor" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_staff_actor" ManuallyRouted="false" />
         <AssociationConnector Association="IMDbModel.FK_comments_movies" ManuallyRouted="false" />
-        <AssociationConnector Association="IMDbModel.FK_likes_movie" ManuallyRouted="false" />
-        <AssociationConnector Association="IMDbModel.FK_movie_images" ManuallyRouted="false" />
         <AssociationConnector Association="IMDbModel.FK_comments_users" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_fav_director_actor" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_fav_movies_director" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_fav_actor_user" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_fav_director_user" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_fav_movies_movies" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_fav_movies_user" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_likes_movie" ManuallyRouted="false" />
         <AssociationConnector Association="IMDbModel.FK_likes_user" ManuallyRouted="false" />
-        <AssociationConnector Association="IMDbModel.Favorite_Cast" ManuallyRouted="false" />
-        <AssociationConnector Association="IMDbModel.Favorite_Movies" ManuallyRouted="false" />
-        <AssociationConnector Association="IMDbModel.Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="IMDbModel.FK_staff_movies" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
