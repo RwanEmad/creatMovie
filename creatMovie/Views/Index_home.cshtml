@@ -1,10 +1,11 @@
 ﻿
 @{
-    ViewBag.Title = "imdb_home";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Index_home";
 }
 @Styles.Render("~/Content/imdb_home.css")
 
+
+<h2>Index_home</h2>
 
 <div class="container">
 
@@ -27,6 +28,7 @@
         <div class="header">
             <h2>Movies</h2>
         </div>
+
         <div class="slider">
 
             <div id="card_slider">
@@ -88,13 +90,14 @@
 
 
     <!------------------Directors----------------->
-    <div class="director">
+    <div class="actor">
+
         <div class="header">
-            <h2> Director</h2>
+            <h2> Actor</h2>
         </div>
         <div class="actor_profile">
-            <div id="card_slider" class="actor_slider">
-                <div id="card_track" class="actor_track">
+            <div id="card_slider">
+                <div id="card_track">
                     <a href="  ">
                         <div class="subject_card">
                             @Html.Partial("profile_card")
@@ -159,6 +162,7 @@
 
     <!---------------------actors-------------------------->
     <div class="actor">
+
         <div class="header">
             <h2> Actor</h2>
         </div>
@@ -223,46 +227,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-------about us------------>
-    <div class="about_us">
-        <div class="header">
-            <h1>About Us</h1>
-        </div>
-        <div class="paragraph">
-            <p>
-                Tasaly Flex is created primarily for residents of Egypt.
-             <br /> it allows you to eveluate movies in all major cinemas in Egypt.
-                <br /> You can watch the movie trailer.
-            </p>
-        </div>
-    </div>
-
-    
-    <!---------------contact us---------------->
-    <div class="contact_us">
-        <h1>Contact Us</h1>
-        <form action="/action_page.php">
-
-            <br />
-            <label class="label" for="fname"> Name</label>
-            <br />
-            <input type="text" id="name" name="name">
-
-            <br />
-            <label class="label" for="Email">Email</label>
-            <br />
-            <input type="text" id="email" name="email">
-            <br />
-
-            <label class="label" for="Message">Message</label>
-            <br />
-            <textarea name="text" class="textarea1"></textarea>
-
-
-        </form>
-        <input type="submit" value="Send">
     </div>
 
 

@@ -9,7 +9,7 @@ namespace creatMovie.Controllers
     public class imdb_homeController : Controller
     {
         // GET: imdb_home
-        public ActionResult Index()
+        public ActionResult imdb_home()
         {
             return View();
         }

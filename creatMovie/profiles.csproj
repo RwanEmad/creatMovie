@@ -201,6 +201,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\IMDb.sql" />
+    <Content Include="Content\imdb_home.css" />
     <Content Include="Content\profile_card.css" />
     <Content Include="Content\adminprofile.css" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -291,6 +292,7 @@
     <Content Include="Views\Movies\Details.cshtml" />
     <Content Include="Views\Movies\Edit.cshtml" />
     <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Index_home.cshtml" />
     <Content Include="Views\imdb_home\imdb_home.cshtml" />
   </ItemGroup>
   <ItemGroup>
